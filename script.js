@@ -59,13 +59,19 @@ buttons.forEach((button) => {
 
 
 
-
+const githubImage = document.querySelector('.title img');
 const toggleButton = document.querySelector('.toggle-button');
 const body = document.querySelector('body');
 
 toggleButton.addEventListener('click', (e) => {
   e.preventDefault();
   body.classList.toggle('dark-mode');
+
+  if (body.classList.contains('dark-mode')) {
+    githubImage.src = './img/github-mark.svg';
+  } else {
+    githubImage.src = './img/github-mark-white.svg';
+  }
 
 });
 

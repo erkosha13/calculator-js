@@ -16,6 +16,12 @@ body {
   justify-content: space-between;
   align-items:center;
 }
+
+.title img{
+  width: 30px;
+  padding-left: 40px;
+}
+
 .title h1 {
   color: #fff;
   font-size: 25px;
@@ -56,9 +62,6 @@ body.dark-mode .toggle-button::before {
 }
 
 .screen__wrapper {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 20px;
   grid-column: 1 / -1;
 }
